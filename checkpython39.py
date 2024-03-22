@@ -117,7 +117,7 @@ def check_python39(ip):
                 writer = csv.writer(csvfile)
                 writer.writerow([ip, python3_version, python3_path])
             return True
-        print(f"Python3.9 is installed successfully in server with ip {ip}")
+            print(f"Python3.9 is installed successfully in server with ip {ip}")
 
     except Exception as e:
         print(f"Error occurred while connecting to {ip}: {e}")
