@@ -73,6 +73,8 @@ def check_python39(ip):
             output = stdout.read().decode('utf-8').strip()
             print(output)
             return True
+        else:
+            pass
 
         # Copy Python-3.9.12.tgz from workstation to server
         sftp = ssh.open_sftp()
